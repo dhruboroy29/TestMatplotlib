@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 
 # Create new figure
-newfig = plt.figure()
+fig = plt.figure()
 
 x = [1, 2, 3]
 
@@ -20,4 +20,4 @@ plt.legend()
 plt.show()
 
 # Save as .eps
-newfig.savefig('simple_line.eps', format='eps', dpi=1200)
+fig.savefig('lines.eps', format='eps', dpi=1200)
