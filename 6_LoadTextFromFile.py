@@ -13,13 +13,13 @@ with open('example.txt', 'r') as csvfile:
         x.append(int(row[0]))
         y.append(int(row[1]))
 
-plt.plot(x, y, label='Loaded from file using csv!')
+plt.plot(x, y, label='Loaded from file using csv')
 
 # Use numpy loadtxt
 x, y = np.loadtxt('example2.txt', delimiter=',',
                   unpack=True)  # unpack=False gives ValueError: too many values to unpack (expected 2)
 
-plt.plot(x, y, label='Loaded from file using numpy!', color='r')
+plt.plot(x, y, label='Loaded from file using numpy', color='r')
 
 plt.xlabel('x')
 plt.ylabel('y')
